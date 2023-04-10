@@ -9,4 +9,6 @@ El proyecto base del cuatrimestre
 
 # Equipo de alumnos.
 
- - Javier Gil
+- Miranda, Marco Alan
+- Javier Gil
+
