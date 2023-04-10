@@ -11,4 +11,4 @@ El proyecto base del cuatrimestre
 
 - Miranda, Marco Alan
 - Javier Gil
-
+- ITHURBURU, Juan Pablo 
