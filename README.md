@@ -10,6 +10,4 @@ El proyecto base del cuatrimestre
 
 - 23301
 
-# Equipo de alumnos
-
-    . Régulo Luna
+# Equipo de alumnos.
