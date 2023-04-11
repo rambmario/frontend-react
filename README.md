@@ -3,7 +3,7 @@ El proyecto base del cuatrimestre
 
 ### docente
  - Alejandro Medici
- 
+
 ### Comision:
  - 23301
 
@@ -11,4 +11,5 @@ El proyecto base del cuatrimestre
 
 - Miranda, Marco Alan
 - Javier Gil
+- Miriam Moreno
 
