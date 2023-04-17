@@ -9,6 +9,7 @@ El proyecto base del cuatrimestre
 
 # Equipo de alumnos.
 
+- Nicolas Juárez
 - Miranda, Marco Alan
 - Javier Gil
 
