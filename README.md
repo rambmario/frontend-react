@@ -8,4 +8,8 @@ El proyecto base del cuatrimestre
  - 23301
 
 # Equipo de alumnos.
+
 - Nicolas Juárez
+- Miranda, Marco Alan
+- Javier Gil
+
