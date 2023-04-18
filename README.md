@@ -13,5 +13,7 @@ El proyecto base del cuatrimestre
 - Nicolas Juárez
 - Miranda, Marco Alan
 - Javier Gil
+- Ariel Michelli
 - Diego Barletta
+
 
