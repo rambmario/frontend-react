@@ -2,11 +2,21 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Card from '@/componentes/card'
 
 const inter = Inter({ subsets: ['latin'] })
 
+// Reemplazar esta constante con la info de data.json...
+const myData = [ {name:"Pencilvester", image:"https://rickandmortyapi.com/api/character/avatar/259.jpeg"  },
+{name:"Orthodox Jew", image:"https://rickandmortyapi.com/api/character/avatar/255.jpeg"  }]
+
 export default function Home() {
-  return (
+    /* Esto es una promesa de obtener datos desde algun backend*/
+    fetch("data.json")
+                .then(response => console.log("Se cumplio la promesa: " + response))
+                .catch( reason => console.log("NO cumplio la promesa: " + reason))
+
+    return (
     <>
       <Head>
         <title>Create Next App</title>
@@ -15,8 +25,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-          Hola Mundo
-      </main>
+        Hola Mundo
+        {
+          myData.map( element =>(
+            <Card img={element.image} name={element.name} ></Card>
+          ))
+        }
+          
+        </main>
     </>
   )
 }
