@@ -1,4 +1,4 @@
-{
+[{
     "id": 259,
     "name": "Pencilvester",
     "status": "Dead",
@@ -20,3 +20,4 @@
     "url": "https://rickandmortyapi.com/api/character/259",
     "created": "2017-12-31T13:33:48.488Z"
 }
+]
