@@ -2,13 +2,11 @@
 
 El proyecto base del cuatrimestre
 
-## docente
+### docente
+ - Alejandro Medici
 
-- Alejandro Medici
-
-## Comision
-
-- 23301
+### Comision:
+ - 23301
 
 ## Equipo de alumnos
 
@@ -16,6 +14,7 @@ El proyecto base del cuatrimestre
 - Nicolas Juárez
 - Miranda, Marco Alan
 - Javier Gil
+- Miriam Moreno
 - Ana Sol Franchisena
 - ITHURBURU, Juan Pablo 
 - Quiroga, Martín
@@ -23,3 +22,4 @@ El proyecto base del cuatrimestre
 - Ariel Michelli
 - Diego Barletta
 - Régulo Luna
+
