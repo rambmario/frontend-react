@@ -14,6 +14,7 @@ El proyecto base del cuatrimestre
 - Nicolas Juárez
 - Miranda, Marco Alan
 - Javier Gil
+- Diego Barletta
 - Miriam Moreno
 - Ana Sol Franchisena
 - ITHURBURU, Juan Pablo 
