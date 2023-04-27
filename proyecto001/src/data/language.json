@@ -1,0 +1,14 @@
+{
+    "en": {
+        "LOGIN": "Login",
+        "LOGOUT": "Logout"
+    } ,
+    "es": {
+        "LOGIN": "Ingreso",
+        "LOGOUT": "Cerrar sesion"
+    },
+    "jp":{
+        "LOGIN": "....",
+        "LOGOUT": "...."
+    }
+}

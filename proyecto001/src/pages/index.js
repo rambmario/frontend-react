@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css'
 import Card from '@/componentes/card'
 import Clock from '@/componentes/Clock'
 import data from '@/data/data.json'
+import Profile from '@/componentes/user/profile'
 
 import Reloj from '@/componentes/Reloj'
 
@@ -29,7 +30,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-
+        <Profile></Profile>
         <Reloj />
         
         {
