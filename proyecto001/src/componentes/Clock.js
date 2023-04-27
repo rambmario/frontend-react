@@ -11,12 +11,14 @@
 }*/
 
 import { Component } from "react";
+import language from "@/data/language"
 
 // Un componente de Clase
 export default class Clock extends Component {
     constructor(props) {
         super(props);
         this.state = { date: new Date() }; // this.state.date
+        const welcomeString = language["en"].LOGIN;
     }
 
     // Es un nuevo metodo para actualizar el estado del reloj...
