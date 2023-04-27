@@ -26,5 +26,6 @@ El proyecto base del cuatrimestre
 - Diego Barletta
 -Andrés Drimer
 - Régulo Luna
+-Mario Ramb
 
 
