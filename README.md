@@ -14,6 +14,7 @@ El proyecto base del cuatrimestre
 - Nicolas Juárez
 - Miranda, Marco Alan
 - Javier Gil
+- Oscar Ibañez
 - David Barraud
 - Diego Barletta
 - Miriam Moreno
@@ -24,5 +25,6 @@ El proyecto base del cuatrimestre
 - Ariel Michelli
 - Diego Barletta
 - Régulo Luna
+
 
 
