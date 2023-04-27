@@ -13,6 +13,7 @@ El proyecto base del cuatrimestre
 - Nicolas Juárez
 - Miranda, Marco Alan
 - Javier Gil
+- Ana Sol Franchisena
 - ITHURBURU, Juan Pablo 
 - Quiroga, Martín
 - Walter Liendo
