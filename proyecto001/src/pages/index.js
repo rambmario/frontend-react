@@ -6,6 +6,8 @@ import Card from '@/componentes/card'
 import Clock from '@/componentes/Clock'
 import data from '@/data/data.json'
 
+import Reloj from '@/componentes/Reloj'
+
 const inter = Inter({ subsets: ['latin'] })
 
 // Reemplazar esta constante con la info de data.json...
@@ -27,8 +29,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Clock></Clock>
-        Hola Mundo
+
+        <Reloj />
+        
         {
           myData.map(element => (
             <Card img={element.image} name={element.name} ></Card>
