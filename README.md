@@ -9,6 +9,13 @@ El proyecto base del cuatrimestre
 
 # Equipo de alumnos.
 
+- Agustín Moldavsky
+- Nicolas Juárez
 - Miranda, Marco Alan
 - Javier Gil
 - ITHURBURU, Juan Pablo 
+- Quiroga, Martín
+- Walter Liendo
+- Ariel Michelli
+- Diego Barletta
+
