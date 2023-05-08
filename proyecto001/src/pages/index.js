@@ -1,13 +1,13 @@
 import Head from 'next/head'
-import Image from 'next/image'
+//import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import Card from '@/componentes/card'
-import Clock from '@/componentes/Clock'
-import data from '@/data/data.json'
-import Profile from '@/componentes/user/profile'
-
-import Reloj from '@/componentes/Reloj'
+//import Card from '@/componentes/card/card'
+//import Clock from '@/componentes/timer/Clock'
+//import data from '@/data/data.json'
+//import Profile from '@/componentes/user/profile'
+//import Reloj from '@/componentes/timer/Reloj'
+import ButtonPlus from '@/componentes/buttons/button_plus'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,14 +30,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Profile></Profile>
-        <Reloj />
-        
-        {
-          myData.map(element => (
-            <Card img={element.image} name={element.name} ></Card>
-          ))
-        }
+        <ButtonPlus></ButtonPlus>
       </main>
     </>
   )
