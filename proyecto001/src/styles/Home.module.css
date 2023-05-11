@@ -7,6 +7,14 @@
   min-height: 100vh;
 }
 
+.light {
+  background-color: aqua;
+}
+
+.dark {
+  background-color: black;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
