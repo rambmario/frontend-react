@@ -1,11 +1,11 @@
 import { Component, useContext } from "react";
-import { mainContext } from "@/context/maincontext";
+import { maincontextState } from '@/context/maincontextprovider'
 
+// Lo pasamos a funcional al tener contexto...
 export default class Darkmode extends Component {
     constructor ( props ) {
         super(props);
-        let { darkMode } = {}//useContext(mainContext)
-        this.state = { isToggleOn: darkMode}
+        this.state = { isToggleOn: false}
     }
 
     changeOnOff() {
