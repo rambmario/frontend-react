@@ -1,5 +1,4 @@
 import Head from 'next/head'
-
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import ButtonPlus from '@/componentes/buttons/button_plus'
@@ -7,18 +6,14 @@ import Footer from '@/componentes/footer/footer'
 import Navbar from '@/componentes/navbar/navbar'
 import DarkModef from '@/componentes/buttons/dark_mode_f'
 import InitialLogin from '@/componentes/login/initialLogin'
-import { mainContextProvider } from '@/context/maincontextprovider'
-import { useContext } from 'react'
-import { maincontextState } from '@/context/maincontextprovider'
+import MainContextProvider from '@/context/maincontextprovider'
+import Message from '@/componentes/message/message'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Test() {
   
-    let context = useContext(maincontextState);
-    let darkMode = context.darkMode;
-    let isLoggedIn = context.isLoggedIn;
-
+   
     return (
       <>
         <Head>
@@ -27,17 +22,17 @@ export default function Test() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <mainContextProvider>
+        <MainContextProvider>
           <Navbar></Navbar>
           <DarkModef></DarkModef>
-
+          <br></br>
           <InitialLogin/>
           <main className={styles.main}>
             <ButtonPlus></ButtonPlus>
-            <span className={darkMode?styles.dark:styles.light}>TEMP</span>
+            <Message text="Hello"></Message>
           </main>
           <Footer></Footer>
-        </mainContextProvider>
+        </MainContextProvider>
       </>
     )
   }
