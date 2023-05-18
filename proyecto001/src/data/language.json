@@ -1,14 +1,23 @@
 {
     "en": {
         "LOGIN": "Login",
-        "LOGOUT": "Logout"
+        "LOGOUT": "Logout",
+        "PASSWORD": "Password",
+        "USEREMAIL": "email",
+        "SUBMIT": "Submit"
     } ,
     "es": {
         "LOGIN": "Ingreso",
-        "LOGOUT": "Cerrar sesion"
+        "LOGOUT": "Cerrar sesion",
+        "PASSWORD": "Contraseña",
+        "USEREMAIL": "email",
+        "SUBMIT": "Enviar"
     },
     "jp":{
         "LOGIN": "....",
-        "LOGOUT": "...."
+        "LOGOUT": "....",
+        "PASSWORD": "...",
+        "USEREMAIL": "...",
+        "SUBMIT": "..."
     }
 }
