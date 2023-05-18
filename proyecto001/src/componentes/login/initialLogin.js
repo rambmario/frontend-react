@@ -6,11 +6,13 @@ import { maincontextState } from "@/context/maincontextprovider";
 export default function InitialLogin() {
 
     let context = useContext(maincontextState);
-    let isLoggedIn = context.isLoggedIn;
+    let isLoggedIn = true;//context.isLoggedIn;
 
     if (isLoggedIn){
         return <Logout/>
     } else {
         return <Login/>
     }
+
+    //return isLoggedIn? <Logout/>:<Login/>;
 }
