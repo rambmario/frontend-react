@@ -1,7 +1,7 @@
 const defaultState = {
     language : "es",
     darkMode : true,
-    isLoggedIn: true,
+    isLoggedIn: false,
     username : "anonymous"
 }
 

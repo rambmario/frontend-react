@@ -3,10 +3,10 @@ import Logout from "./logout";
 import { useContext } from "react";
 import { maincontextState } from "@/context/maincontextprovider";
 
-export default function InitialLogin() {
+export default function InitialLogin( props ) {
 
     let context = useContext(maincontextState);
-    let isLoggedIn = true;//context.isLoggedIn;
+    let isLoggedIn = context.isLoggedIn;
 
     if (isLoggedIn){
         return <Logout/>
