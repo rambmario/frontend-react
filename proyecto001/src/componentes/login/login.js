@@ -13,6 +13,7 @@ export default function Login() {
     function submitFunction ( event ) {
         console.log("Estoy invocando la funcion submit...")
         event.preventDefault();
+        // Revisar que el target event es el correcto o no...
         validateForm(event);
         // fetch a backend...
         // O envio de data a firebase..
