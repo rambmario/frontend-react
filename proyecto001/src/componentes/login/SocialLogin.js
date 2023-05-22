@@ -1,7 +1,41 @@
+import { appFirebase } from "@/firebase/InitConfig"
+import { getAuth, signInWithPopup, linkWithPopup } from "firebase/auth"
+import { GoogleAuthProvider, FacebookAuthProvider, TwitterAuthProvider } from "firebase/auth"
+
 export default function SocialLogin() {
+
+    const googleProvider = new GoogleAuthProvider();
+    const facebookProvider = new FacebookAuthProvider();
+    const twitterProvider = new TwitterAuthProvider();
+
+    function doLogin( provider ) {
+        const auth = getAuth(appFirebase);
+        signInWithPopup(auth, provider )
+        .then( (credentials) => {
+            const user = credentials.user;
+            console.log(user);
+        } )
+        .catch( (error)=>{
+            const erroCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode);
+            console.log(errorMessage);
+        } )
+    }
+
     return(
     <>
-        <span>Placeholder para social login (ex. Google/facebook/etc)</span>
+        <button onClick={ () => doLogin(googleProvider) }>
+            Sign in With Google Account..
+        </button>
+        <br></br>
+        <button onClick={ () => doLogin(facebookProvider) }>
+            Sign in With Facebook Account..
+        </button>
+        <br></br>
+        <button onClick={ () => doLogin(twitterProvider) }>
+            Sign in With Twitter Account..
+        </button>
     </>
     )
 }
