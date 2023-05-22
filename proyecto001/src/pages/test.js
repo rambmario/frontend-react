@@ -1,20 +1,19 @@
 import Head from 'next/head'
-
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import ButtonPlus from '@/componentes/buttons/button_plus'
 import Footer from '@/componentes/footer/footer'
 import Navbar from '@/componentes/navbar/navbar'
-import Darkmode from '@/componentes/buttons/darkmode'
-import { useContext } from 'react'
-import { mainContext } from '@/context/maincontext'
+import DarkModef from '@/componentes/buttons/dark_mode_f'
+import InitialLogin from '@/componentes/login/initialLogin'
+import MainContextProvider from '@/context/maincontextprovider'
+import Message from '@/componentes/message/message'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Test() {
-
-    let { darkMode } = useContext(mainContext);
-
+  
+   
     return (
       <>
         <Head>
@@ -23,13 +22,17 @@ export default function Test() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Navbar></Navbar>
-        <Darkmode></Darkmode>
-        <main className={styles.main}>
-          <ButtonPlus></ButtonPlus>
-          <span className={darkMode?styles.dark:styles.light}>TEMP</span>
-        </main>
-        <Footer></Footer>
+        <MainContextProvider>
+          <Navbar></Navbar>
+          <DarkModef></DarkModef>
+          <br></br>
+          <InitialLogin/>
+          <main className={styles.main}>
+            <ButtonPlus></ButtonPlus>
+            <Message text="Hello"></Message>
+          </main>
+          <Footer></Footer>
+        </MainContextProvider>
       </>
     )
   }

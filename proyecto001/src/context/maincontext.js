@@ -1,14 +1,17 @@
-import React from "react";
-
 const defaultState = {
     language : "es",
     darkMode : true,
+    isLoggedIn: false,
     username : "anonymous"
 }
 
-function getInitialState() {
+export default function getInitialState() {
     // podemos cargar data previamente guardamente en localstorage..
     return defaultState;
 }
 
-export const mainContext = React.createContext(getInitialState());
+export function saveContextState ( newcontextState) {
+    //salva dentro de localstorage
+    localStorage.setItem( "contextState", JSON.stringify(newcontextState))
+}
+
