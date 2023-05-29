@@ -1,5 +1,7 @@
 import { useContext } from "react";
 import { maincontextState } from "@/context/maincontextprovider";
+import { appFirebase } from "@/firebase/InitConfig"
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth"
 import SocialLogin from "./SocialLogin";
 import LANGUAGES from "@/data/language";
 import { validateForm } from "@/Utils/forms";
@@ -14,9 +16,23 @@ export default function Login() {
         console.log("Estoy invocando la funcion submit...")
         event.preventDefault();
         // Revisar que el target event es el correcto o no...
-        validateForm(event);
+        // validateForm(event);
         // fetch a backend...
         // O envio de data a firebase..
+        const auth = getAuth(appFirebase);
+        const email = "test@test.com";
+        const password = "test1234";
+        signInWithEmailAndPassword(auth, email, password )
+        .then( (credentials) => {
+            const user = credentials.user;
+            console.log(user);
+        } )
+        .catch( (error)=>{
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode);
+            console.log(errorMessage);
+        } )
     }
 
     return (
