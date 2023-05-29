@@ -7,7 +7,8 @@ export default function Navbar(props) {
     let { darkmode } = useContext(maincontextState);
 
     return (
-        <div className="navbar">
+        <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+           <div className="container-fluid">
             <ul>
                 <li>
                     <Link href='/'>Home</Link>
@@ -19,6 +20,7 @@ export default function Navbar(props) {
                     <Link href='/api/hello'>API</Link>
                 </li>
             </ul>
-        </div>
+           </div>
+        </nav>
     )
 }
