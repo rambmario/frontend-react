@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import ButtonPlus from '@/componentes/buttons/button_plus'
+import ButtonPlusF from '@/componentes/buttons/button_plusf'
 import Footer from '@/componentes/footer/footer'
 import Navbar from '@/componentes/navbar/navbar'
 import DarkModef from '@/componentes/buttons/dark_mode_f'
@@ -30,6 +31,7 @@ export default function Test() {
           <main className={styles.main}>
             <ButtonPlus></ButtonPlus>
             <Message text="Hello"></Message>
+            <ButtonPlusF></ButtonPlusF>
           </main>
           <Footer></Footer>
         </MainContextProvider>
