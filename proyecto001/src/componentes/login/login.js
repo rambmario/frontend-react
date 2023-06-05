@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { maincontextState } from "@/context/maincontextprovider";
-import { appFirebase } from "@/firebase/InitConfig"
+import { appFirebase, db } from "@/firebase/InitConfig"
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth"
 import { collection, getDocs } from "firebase/firestore";
 import SocialLogin from "./SocialLogin";
@@ -26,6 +26,7 @@ export default function Login() {
         signInWithEmailAndPassword(auth, email, password)
             .then((credentials) => {
                 const user = credentials.user;
+              
                 console.log(user);
 
                 getDocs(collection(db, "lista de peliculas")).then((querySnapshot) => {
