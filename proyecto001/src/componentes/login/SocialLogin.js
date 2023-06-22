@@ -25,15 +25,20 @@ export default function SocialLogin() {
 
     return(
     <>
-        <button onClick={ () => doLogin(googleProvider) }>
+        <button 
+            className="btn btn-primary" 
+            onClick={ () => doLogin(googleProvider) }>
             Sign in With Google Account..
         </button>
         <br></br>
-        <button onClick={ () => doLogin(facebookProvider) }>
+        <button className="btn btn-primary" 
+                onClick={ () => doLogin(facebookProvider) }>
             Sign in With Facebook Account..
         </button>
         <br></br>
-        <button onClick={ () => doLogin(twitterProvider) }>
+        <button 
+        className="btn btn-primary" 
+        onClick={ () => doLogin(twitterProvider) }>
             Sign in With Twitter Account..
         </button>
     </>

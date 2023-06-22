@@ -2,7 +2,8 @@ const defaultState = {
     language : "es",
     darkMode : true,
     isLoggedIn: false,
-    username : "anonymous"
+    username : "anonymous",
+    user: {}
 }
 
 export default function getInitialState() {
