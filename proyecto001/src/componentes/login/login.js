@@ -28,8 +28,8 @@ export default function Login() {
                 const user = credentials.user;
               
                 console.log(user);
-
-                getDocs(collection(db, "lista de peliculas")).then((querySnapshot) => {
+                const myCollection = collection(db, "lista de peliculas")
+                getDocs(myCollection).then((querySnapshot) => {
                     querySnapshot.forEach((doc) => {
                         console.log(`${doc.id} => ${doc.data()}`);
                     });
