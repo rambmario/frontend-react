@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function DarkModef (){
 
     const { darkMode, setDarkmode }  = useContext(maincontextState)
-    let [isToggleOn, setToggle] = useState({darkMode});
+    let [isToggleOn, setToggle] = useState(darkMode);
        
     return(
         <>
