@@ -6,9 +6,15 @@ const defaultState = {
     user: {}
 }
 
-export default function getInitialState() {
-    // podemos cargar data previamente guardamente en localstorage..
-    return defaultState;
+export function getInitialState() {
+    
+    let initialState = defaultState;
+
+    // Conservar el localstorage de lado cliente siempre.
+    //initialState = JSON.parse(localStorage.getItem("contextState"))
+    
+    
+    return initialState;
 }
 
 export function saveContextState ( newcontextState) {

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ibm-watson/assistant-web-chat-react": "^1.0.4",
     "bootstrap": "^5.2.3",
     "firebase": "^9.22.0",
     "next": "13.3.0",

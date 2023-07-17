@@ -1,6 +1,7 @@
 import { createContext } from "react";
 import { useState } from "react";
-import getInitialState from "./maincontext";
+import { getInitialState } from "./maincontext";
+import { saveContextState } from "./maincontext";
 
 const maincontextState = createContext([{}, () =>{} ]);
 
@@ -10,6 +11,8 @@ export default function MainContextProvider ( { children }) {
 
     const setDarkMode = (darkMode) => {
         setContext({...context, ['darkMode']: darkMode })
+
+        saveContextState(context);
     }
 
     return (
